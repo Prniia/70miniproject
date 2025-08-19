@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('../fonts/Vazir.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Vazir.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Vazir.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/Vazir.woff') format('woff'); /* Pretty Modern Browsers */
+  }
+
+  *{
+    padding: 0;
+    margin: 0;
+  }
+
+  body{
+    font-family: 'Vazir' ;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  section{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+
+  section video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  section .navigation{
+    position: absolute;
+    display: flex;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50vw;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  section .navigation li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    height: 130px;
+    background: #fff;
+    cursor: pointer;
+  }
+
+  section .navigation li img{
+    width: 200px;
+    height: 120px;
+    opacity: .8;
+  }
+
+  section .navigation li img:hover{
+    opacity: 1;
+  }
